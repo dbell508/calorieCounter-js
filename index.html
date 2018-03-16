@@ -4,7 +4,7 @@
 	<title>Calorie Counter</title>
 </head>
 <body>
-	<div id="output">Calorie Counter</div>
+	<div id="headline">Calorie Counter</div>
 	<form id="myForm">
 		<div>
 			Female <input id="f" type="radio" name="gender">
@@ -22,11 +22,35 @@
 		<div>
 			Lifestyle <input id="lifeStyle" type="number" value="1" min="1" max="5"> 1 = low activity | 5 = high activity 
 		</div>
-
 	</form>
+	<br>
+
+	<div id="output"></div>
 
 	<script type="text/javascript">
 		
+		document.forms.myForm.onchange = outputCal;
+
+		function outputCal() {
+			// console.log(event.target);
+			function docId(){
+				let r = document.querySelector(arguments[0]);
+				r = (r.value == 'on') ? r.checked : Number(r.value);
+				return r;
+			}
+
+			let age = docId('#age');
+			let height = (docId('#heightFt') * 12) + docId('#heightIn');
+			let weight = docId('#weight');
+			let lifeStyle = (docId('#lifeStyle') * 0.2) + 1;
+
+			let result = docId('#m') ? lifeStyle * (66 + (6.2 * weight) + (12.7 * height) - (6.76 * age)) : lifeStyle * (655.1 + (4.35 * weight) +  (4.7 * height) - (4.7 * age));
+			document.getElementById('output').innerHTML = Math.round(result) + ' calories needed per day to maintain weight.';
+		}
+
+
+
+
 	</script>
 </body>
 </html>
