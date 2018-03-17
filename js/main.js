@@ -1,4 +1,4 @@
-document.getElementById('calcBtn').addEventListener('click', outputCal());
+// document.getElementById('calcBtn').addEventListener('click', outputCal());
 
 function outputCal() {
 	function docId(){

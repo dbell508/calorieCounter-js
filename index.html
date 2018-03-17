@@ -10,11 +10,16 @@
 	<div class="container">
 		<h1 id="headline">Calorie Counter</h1>
 		<br>
-		<form id="myForm">
-			<div>
-				<p class="label">GENDER</p>
+		<table id="myForm">
+			<tr>
+				<td>
+					<p class="label">GENDER</p>
+				</td>
+				<td>
 				Female <input id="f" type="radio" name="gender">
 				Male <input id="m" type="radio" name="gender">
+				</td>
+			</tr>
 			</div>
 			<div>
 				<p class="label">WEIGHT</p> 
@@ -22,7 +27,7 @@
 			</div>
 			<div>
 				<p class="label">HEIGHT</p>
-				<input id="heightFt" type="number"> Feet<input id="heightIn" type="number" max="11" min="0"> Inches
+				<input id="heightFt" type="number"> Ft <input id="heightIn" type="number" max="11" min="0"> In
 			</div>
 			<div>
 				<p class="label">AGE</p>
@@ -32,9 +37,9 @@
 				<p class="label">LIFESTYLE</p> 
 				<input id="lifeStyle" type="number" min="1" max="5"> 1 = low activity | 5 = high activity 
 			</div>
-			<button class="btn btn-primary" id="calcBtn">Calculate</button>
-		</form>
+		</table>
 		<br>
+		<button class="btn btn-primary" id="calcBtn" onclick="outputCal()">Calculate</button>
 
 		<div id="output"></div>
 	</div>
