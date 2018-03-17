@@ -1,4 +1,4 @@
-document.forms.myForm.onchange = outputCal;
+document.getElementById('calcBtn').addEventListener('click', outputCal());
 
 function outputCal() {
 	function docId(){
