@@ -20,23 +20,38 @@
 				Male <input id="m" type="radio" name="gender">
 				</td>
 			</tr>
-			</div>
-			<div>
-				<p class="label">WEIGHT</p> 
-				<input id="weight" type="number"> lbs
-			</div>
-			<div>
-				<p class="label">HEIGHT</p>
-				<input id="heightFt" type="number"> Ft <input id="heightIn" type="number" max="11" min="0"> In
-			</div>
-			<div>
-				<p class="label">AGE</p>
-				<input id="age" type="number"> Years Old
-			</div>
-			<div>
-				<p class="label">LIFESTYLE</p> 
-				<input id="lifeStyle" type="number" min="1" max="5"> 1 = low activity | 5 = high activity 
-			</div>
+			<tr>
+				<td>
+					<p class="label">WEIGHT</p> 
+				</td>
+				<td>
+					<input id="weight" type="number"> lbs
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="label">HEIGHT</p>
+				</td>
+				<td>
+					<input id="heightFt" type="number"> Ft <input id="heightIn" type="number" max="11" min="0"> In
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="label">AGE</p>
+				</td>
+				<td>
+					<input id="age" type="number"> Years Old
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<p class="label">LIFESTYLE</p> 
+				</td>
+				<td>
+					<input id="lifeStyle" type="number" min="1" max="5"> 1 = low activity | 5 = high activity 
+				</td>
+			</tr>
 		</table>
 		<br>
 		<button class="btn btn-primary" id="calcBtn" onclick="outputCal()">Calculate</button>
