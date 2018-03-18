@@ -1,3 +1,37 @@
 body {
 	background-color: #ddd;
 }
+
+td {
+	padding: 10px 0 !important;
+}
+
+input {
+	border: 0;
+	border-radius: 2px;
+	margin: 5px;
+}
+
+#m{
+	margin-left: 15px;
+}
+
+.label {
+	color: #777;
+}
+
+#calcBtn{
+	width: 300px;
+}
+
+.finalNum{
+	font-size: 40px;
+	color: #222;
+}
+
+#output {
+	margin: 50px 0;
+	color: #333;
+
+
+}
